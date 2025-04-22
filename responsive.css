@@ -1,0 +1,512 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media(max-width: 1242px){
+    .container{
+        max-width: 100%;
+        width: 100%;
+    }
+    nav{
+        max-width: 100%;
+    }
+    .top{
+        max-width: 100%;
+    }
+    .main{
+        max-width: 100%;
+        padding: 0px 94px;
+    }
+    .info{
+        width: 41%;
+    }
+    .images {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    .top video{
+        width: 57.5%;
+        height: auto;
+    }
+    .top .info h1{
+        font-size: 75px;
+        line-height: 70px;
+    }
+    .start .temp{
+        width: 65%;
+    }
+    .next .moving{
+        max-width: 100%;
+        width: 100%;
+    }
+    .next img{
+        height: 90%;
+        max-width: 100%;
+    }
+    .build > video{
+        height: 90%;
+        max-height: 100%;
+    }
+    .five h2{
+        width: 60%;
+    }
+    .footer{
+        padding: 80px 105px;
+    }
+    .footlinks{
+        gap: 73px;
+    }
+}
+@media(max-width: 1221px){
+    .info{
+        width: 49%;
+    }
+    .docs h2{
+        margin-right: 0px;
+    }
+}
+@media(max-width: 1160px){
+    .container{
+        max-width: 100%;
+    }
+    nav{
+        max-width: 100%;
+    }
+    .top{
+        max-width: 100%;
+    }
+    .info{
+        width: 50%;
+    }
+    .top video{
+        width: 49%;
+    }
+    .five h2{
+        width: 65%;
+    }
+}
+@media(max-width: 1150px){
+    .main{
+        padding: 0px 80px;
+    }
+    .footlinks{
+        gap: 60px;
+    }
+}
+@media(max-width: 1094px){
+    .footlinks{
+        gap: 50px
+    }
+}
+@media(max-width: 1087px){
+    .start .temp{
+        width: 75%;
+    }
+    .footlinks{
+        gap: 50px
+    }
+}
+@media(max-width: 1080px){
+    .container{
+        max-width: 100%;
+    }
+    nav{
+        max-width: 100%;
+    }
+    .top{
+        max-width: 100%;
+    }
+    .main{
+        max-width: 100%;
+    }
+    .logo .after{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    .ham{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top video{
+        width: 42%;
+    }
+    .moving{
+        max-width: 100%;
+        padding-top: 30px;
+    }
+    .moving button{
+        border: none;
+    }
+    .five h2{
+        width: 70%;
+    }
+    .footer{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .foot{
+        width: 50%;
+    }
+    .footlinks{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .more{
+        margin-bottom: 0px;
+    }
+}
+@media(max-width: 1014px){
+    .info{
+        width: 52%;
+    }
+    .top video{
+        width: 40%;
+    }
+    .five h2{
+        width: 75%;
+    }
+}
+@media(max-width: 957px){
+    .container{
+        max-width: 100%;
+    }
+    nav{
+        max-width: 100%;
+    }
+    .top{
+        max-width: 100%;
+    }
+    .main{
+        max-width: 100%;
+    }
+    .info{
+        width: 55%;
+    }
+    .top video{
+        width: 40%;
+    }
+}
+@media(max-width: 940px){
+    .top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        padding: 0px 60px;
+    }
+    .info{
+        padding-top: 125px;
+        width: 65%;
+        text-align: center;
+        align-items: center;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    .images{
+        justify-content: center;
+        padding-top: 3px;
+        row-gap: 18px;
+    }
+    .top video{
+        width: 65%;
+    }
+    .next img{
+        margin-top: 0px;
+    }
+    .company{
+        grid-template-columns: 1fr;
+    }
+    .wiki{
+        grid-column: span 1;
+    }
+    .five h2{
+        width: 75%;
+    }
+    .six .side{
+        flex-direction: column;
+    }
+}
+@media(max-width: 905px){
+    .five h2{
+        width: 80%;
+    }
+}
+@media(max-width: 850px){
+    .five h2{
+        width: 85%;
+    }
+    .footer{
+        padding: 80px 60px;
+    }
+}
+@media(max-width: 820px){
+    .docs{
+        width: 100%;
+    }
+    .tools{
+        display: none;
+    }
+    .tab-tools{
+        width: 100%;
+        display: grid;
+        padding-top: 50px;
+    }
+    .start .temp{
+        width: 100%;
+    }
+    .five h2{
+        width: 90%;
+    }
+}
+@media(max-width: 784px){
+    .container{
+        max-width: 100%;
+    }
+    nav{
+        max-width: 100%;
+    }
+    .top{
+        max-width: 100%;
+    }
+    .main{
+        max-width: 100%;
+    }
+    .info{
+        width: 70%;
+    }
+    .images{
+        padding-top: 8px;
+    }
+    .five h2{
+        width: 100%;
+    }
+}
+@media(max-width: 740px){
+    .next img{
+        height: 700px;
+        max-height: 100%;
+        display: none;
+    }
+    .next .tab-pic{
+        display: block;
+    }
+    .build > video{
+        height: 703px;
+        display: none;
+    }
+    .build .tab-pic{
+        display: block;
+    }
+    .moving{
+        max-width: 100%;
+    }
+    .tilted{
+        width: 100%;
+    }
+}
+@media(max-width: 730px){
+    .next img{
+        height: 90%;
+        max-height: 100%;
+        display: none;
+    }
+    .next .tab-pic{
+        display: block;
+    }
+    .build > video{
+        height: 90%;
+        display: none;
+    }
+    .build .tab-pic{
+        display: block;
+    }
+    .moving{
+        max-width: 100%;
+    }
+}
+@media(max-width: 720px){
+    .info{
+        width: 72%;
+    }
+}
+@media(max-width: 703px){
+    .main{
+        padding: 0px 50px;
+    }
+    .top{
+        align-items: start;
+    }
+    .info{
+        padding-top: 82px;
+        width: 100%;
+        text-align: start;
+        align-items: start;
+    }
+    .top .info h1{
+        font-size: 53px;
+        line-height: 50.35px;
+    }
+    .buttons{
+        width: 100%;
+        align-items: center;
+    }
+    .top video{
+        width: 100%;
+    }
+    .tilted{
+        width: 340px;
+        padding: 20px;
+    }
+    .tilted div h1{
+        font-size: 25px;
+        line-height: 39px;
+    }
+    .tilted > img{
+        width: 32px;
+        top: -30px;
+    }
+    .grid-con{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item img{
+        height: 60px;
+        width: 60px;
+    }
+}
+@media(max-width: 702px){
+    .info p{
+        padding-top: 20px;
+    }
+    .buttons{
+        padding-top: 25px;
+    }
+    .buttons button{
+        width: 100%;
+    }
+    .moving{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 600px){
+    .docs h2{
+        font-size: 45px;
+        line-height: 49px;
+    }
+    .start .temp h2{
+        font-size: 45px;
+        line-height: 49px;
+    }
+    .five h2{
+        font-size: 45px;
+        line-height: 49px;
+    }
+    .six{
+        padding-bottom: 0px;
+    }
+}
+@media(max-width: 587px){
+    .main{
+        padding: 0px 40px;
+    }
+    .images{
+        justify-content: start;
+    }
+    .build{
+        padding: 100px 0px 25px;
+    }
+    .tab-tools{
+        padding-top: 15px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #DDDD;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .tab-tools .building{
+        display: flex;
+        gap: 20px;
+    }
+    .tab-tools div video{
+        width: 50px;
+        height: 50px;
+    }
+    .replace{
+        padding-top: 30px;
+        display: none;
+    }
+    .build .phone-replace{
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+    }
+    .phone-replace .help{
+        display: flex;
+        gap: 12px;
+    }
+    .tilted{
+        margin: 75px auto 25px;
+    }
+    .start{
+        padding: 100px 0px 25px;
+    }
+    .six{
+        padding-bottom: 0px;
+    }
+    .footer{
+        padding: 80px 30px;
+    }
+}
+@media(max-width: 500px){
+    .container{
+        max-width: 100%;
+    }
+    nav{
+        max-width: 100%;
+    }
+    .top{
+        max-width: 100%;
+    }
+    .main{
+        max-width: 100%;
+    }
+    .main{
+        padding: 0px 35px;
+    }
+}
+@media(max-width: 410px){
+    .tilted{
+        width: 100%;
+    }
+}
+@media(max-width: 403px){
+    .main{
+        padding: 0px 28px;
+    }
+    .try{
+        flex-direction: column;
+        align-items: start;
+    }
+    .try button{
+        width: auto;
+    }
+    .footer{
+        padding: 80px 15px;
+    }
+}
+@media(max-width: 377px){
+    .container{
+        max-width: 100%;
+        max-height: 100%;
+        width: 90%;
+        height: 90%;
+    }
+}
+@media(max-width: 350px){
+    .main{
+        padding: 0px 23px;
+    }
+}
+

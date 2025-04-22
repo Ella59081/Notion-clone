@@ -3,22 +3,36 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+}
 .con{
     height: 100vh;
     width: 100%;
     position: relative;
     font-family: inter;
 }
+html::-webkit-scrollbar{
+    position: absolute;
+    z-index: 10;
+}
 nav{
     width: 100%;
     height: 60px;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 15px 0px;
     background-color: white;
+    transition: border, 0.5s;
     /* border-bottom: 1px solid  #0000000d; */
 }
 nav div{
@@ -33,7 +47,7 @@ nav a{
 .logo{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 34px;
 }
 .logo a{
     font-size: 15px;
@@ -41,7 +55,78 @@ nav a{
 }
 .logo a svg{
     height: 26px;
-    margin: 3px 0px 0px 1px;
+    margin: 4px 0px 0px 1px;
+}
+.logo .after{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+.after > div{
+    display: flex;
+    align-items: center;
+    gap: 8.5px;
+    position: relative;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+.after div:hover{
+    background-color: #0000000d;
+}
+.after div:hover .more-info{
+    display: flex;
+}
+.after div svg{
+    margin-top: 3px;
+}
+.downDrop p{
+    color: #77726e;
+    font-size: 13.5px;
+    line-height: 19px;
+    padding: 4px 7px;
+}
+.after .downDrop p .browser{
+    padding: 0px 0px;
+    color: #77726e;
+    font-size: 13.5px;
+    line-height: 19px;
+    text-decoration: #77726e underline;
+}
+.after .downDrop p .browser:hover{
+    background-color: white;
+    color: #0982fa;
+    text-decoration: #0982fa underline;
+}
+.after > div .more-info{
+    display: flex;
+    align-items: start;
+    padding: 5px;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border-radius: 6px;
+    top: 31px;
+    left: -0.5px;
+    box-shadow: 0 4px 15px 0 #0000000d;
+    width: 172px;
+    display: none;
+}
+.after > div .more-info a{
+    width: 100%;
+    padding: 7px 7px;
+    border-radius: 6px;
+}
+.after > div .more-info a:hover{
+    background-color: #f6f5f4;
+}
+.after > div .inDrop{
+    width: 138px;
+}
+.after > div .downDrop{
+    width: 190px;
+}
+.ham{
+    display: none;
 }
 .links{
     display: flex;
@@ -99,6 +184,7 @@ nav a{
 }
 .info{
     padding-top: 90px;
+    display: flex;
     flex-direction: column;
     width: 38%;
 }
@@ -153,19 +239,19 @@ nav a{
     padding-top: 8px;
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 48px;
 }
 .images img{
-    height: 30px;
+    height: 26px;
+}
+.images img:first-child{
+    height: 24px;
 }
 .images img:nth-child(2){
-    height: 22px;
-}
-.images img:nth-child(3){
-    height: 20.5px;
+    height: 26.5px;
 }
 .top video{
-    width: 51%;
+    width: 51.2%;
     height: 37%;
     margin-bottom: 1px; 
 }
@@ -182,12 +268,20 @@ nav a{
     border-radius: 10px;
     margin-top: 50px;   
 }
+.tab-pic{
+    display: none;
+}
 .moving{
+    width: 100%;
+    max-width: 100%;
     display: flex;
+    align-items: center;    
+    justify-content: center;
     gap: 9px;
-    padding-top: 25px;
+    padding: 25px 0px 0px;
 }
 .moving button{
+    width: auto;
     display: flex;
     gap: 5px;
     padding: 6px 11px;
@@ -200,7 +294,7 @@ nav a{
     background-color: #0000000d;
 }
 .moving button:active{
-    background-color: #0a0a0a0d;
+    background-color: #1111110d;
 }
 .moving button path{
     width: 22px;
@@ -279,12 +373,18 @@ nav a{
     font-weight: 490;
     line-height: 23px;
 }
+.build .tab-pic{
+    display: none;
+}
 .build > video{
     height: 640px;
     width: 100%;
     border-radius: 20px;
     margin-top: 30px;
     border: 1px solid #0000000d;
+}
+.build .phone-replace{
+    display: none;
 }
 .replace{
     display: flex;
@@ -309,9 +409,12 @@ nav a{
     height: 24px;
     width: 24px;
 }
+.tab-tools{
+    display: none;
+}
 .tilted{
     margin: 175px auto 0px;
-    padding: 55px;
+    padding: 60px;
     width: 620px;
     background-color: #0000000d;
     transform: rotate(-3deg);
@@ -327,15 +430,14 @@ nav a{
     color: rgb(26, 26, 25);
     font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", SimSun, "Nanum Myeongjo", NanumMyeongjo, Batang, serif
 }
-.tilted div h4{
-    padding-top: 7px;
-    font-size: 21px;
-    opacity: 0.8;
-    letter-spacing: -2px;
+.tilted div img{
+    margin-top: 10px;
+    height: 17px;
     font-weight: 600;
-    font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", SimSun, "Nanum Myeongjo", NanumMyeongjo, Batang, serif
+    opacity: 0.9;
+
 }
-.tilted img{
+.tilted > img{
     object-fit: contain;
     position: absolute;
     z-index: 1;
@@ -344,7 +446,7 @@ nav a{
     top: -60px;
 }
 .start{
-    padding: 100px 0px 25px;
+    padding: 200px 0px 25px;
 }
 .start .temp{
     width: 50%;
@@ -382,9 +484,10 @@ nav a{
     border-radius: 13px;
     height: 170px;
     background-color: #f6f5f4;
-    padding: 26px 0px 0px 33px;
+    padding: 26px 26px 0px 33px;
 }
 .wiki{
+    padding: 26px 0px 0px 33px;
     grid-row: span 3;
     grid-column: span 2;
     height: 570px;
@@ -516,11 +619,15 @@ nav a{
     margin: 0px 15px;
     padding: 80px 115px;
     display: flex;
-    gap: 50px;
+    gap: 15px;
+    margin: 0px;
 }
 .footer div .wood{
     margin: 0px 0px 0px 2px;
     height: 39px;
+}
+.foot{
+    width: 24%;
 }
 .social{
     display: flex;
@@ -578,6 +685,7 @@ nav a{
 }
 .dont{
     line-height: 19px;
+    
 }
 .change .dont, .cookies{
     text-decoration: none;
@@ -604,7 +712,7 @@ nav a{
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 26px;
+    margin-bottom: 65px;
 }
 .more p{
     font-size: 15px;
@@ -638,6 +746,9 @@ nav a{
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
+}
+.last .explore span{
+    color: black;
 }
 .explore:hover span{
     color: #045ac3;
